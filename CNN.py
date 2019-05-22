@@ -31,7 +31,7 @@ from keras.layers import Dense, Conv2D, MaxPooling2D, Dropout, Flatten
 from keras.utils import np_utils
 
 """
-heyo SoC peeps remove this line and see the git diff.
+
 
 path = "train"
 folder_names = [name for name in os.listdir(path) if os.path.isdir(os.path.join(path, name))]
@@ -78,4 +78,4 @@ for k in range(1):
 	model.fit(X, y, validation_data=(valData, valLabels), epochs=10, batch_size=200, verbose=2)
 	scores = model.evaluate(valData, valLabels, verbose=0)
 	print("Baseline Error: %.2f%%" % (100-scores[1]*100))
-	#sprint("droput value to be:%f"%(0.1+0.01*k))
+	#sprint("droput value to be:%f"%(0.1+0.01*k)
